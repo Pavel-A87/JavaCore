@@ -1,0 +1,580 @@
+Task 2 p1
+{
+Scanner input = new Scanner(System.in);
+		
+		System.out.print("Zadanie: vivesti na ekran posledovatelnoost 4isel ot 0 do 100. ");
+		System.out.println("Vvedite START i nazhmite ENTER");
+		String start = input.next(); 
+		int count = -1;
+		
+		if ( start == start ) {
+			while ( count < 100) {
+				count = count + 1;
+				System.out.println( count );
+			
+		}
+		}	
+	}
+
+
+—————————————
+Task 2 p2
+{
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Zadanie: vivesti na ekran posledovatelnoost 4isel ot 100 do 0 . ");
+		System.out.println("Vvedite START i nazhmite ENTER");
+		String start = input.next(); 
+		int count = 101;
+		
+		if ( start == start ) {
+			while ( count > 0) {
+				count = count - 1;
+				System.out.println( count );
+			
+		}
+		}	
+	}
+
+——————————————
+Task 2 p3
+Scanner input = new Scanner(System.in);
+		
+		System.out.println("Zadanie: vivesti na ekran vse chetnie 4isla v diapazone ot A do B. Znacheniya A, B vvodiatsya s klaviaturi.");
+		System.out.println("Vvedite znachenie A i nazhmite ENTER");
+		int a = input.nextInt(); 
+		System.out.println("Vvedite znachenie B i nazhmite ENTER");
+		int b = input.nextInt(); 
+		int c = a;
+	
+		if (a > b) {
+			System.out.println( "A dolzhno bit bolche B!!!!" );
+				} else {
+					while ( c <= b ) {
+						if ( c % 2 == 0) {
+						System.out.println( c );
+						c = c + 1;
+						}else {
+						c = c + 1;
+						}
+			
+		}
+		}	
+	}
+	}
+————————————
+Task 2 p4
+Scanner input = new Scanner(System.in);
+		
+		System.out.println("Zadanie: vivesti na ekran 4isla v diapazone ot A do B kotorie deliatsya na 3 ili 7 no ne deliatsya na 5. Znacheniya A, B vvodiatsya s klaviaturi.");
+		System.out.println("Vvedite znachenie A i nazhmite ENTER");
+		int a = input.nextInt(); 
+		System.out.println("Vvedite znachenie B i nazhmite ENTER");
+		int b = input.nextInt(); 
+		int c = a;
+	
+		if (a > b) {
+			System.out.println( "A dolzhno bit bolche B!!!!" );
+				} else {
+					while ( c <= b ) {
+						if ( c % 3 == 0 && c % 7 == 0 && !(c % 5 == 0)) {
+						System.out.println( c );
+						c = c + 1;
+						}else {
+						c = c + 1;
+						}
+			
+		}
+		}	
+	}
+	}
+————————————
+Task 2 p5
+	public static void main(String[] args) {
+Scanner input = new Scanner(System.in);
+		
+		System.out.println("Zadanie: vivesti na ekran kol-vo otricatelnih, kol-vo polozhitelnih i kol-no nulei sradi N vvedennih polzovatelem 4isel. Zna4enie N vvoditsya s klaviaturi");
+		System.out.println("Vvedite znachenie N i nazhmite ENTER");
+		int ncount = input.nextInt(); // kol-vo chisel
+		int pol = 0;// polozhitelnie 4isla
+		int otr = 0;// otritsatselnie 4isla
+		int nul = 0;// 4isla ravnie nulu
+		
+		System.out.println("Vvedite luboe chislo i nazhmite ENTER");
+							while (ncount > 0) {
+								int num = input.nextInt(); //vvodim sravnivoemoe 4islo
+								if (num < 0) {
+									otr = otr + 1;
+											} else {
+												if (num == 0) {
+													nul = nul +1;
+															} else {
+																if (num > 0) {
+																	pol = pol + 1;
+																			}
+															}
+											}
+																ncount = ncount - 1;
+											}
+							System.out.println( "Polozhitelnih " + pol );
+							System.out.println( "Otritsatselnih " + otr );
+							System.out.println( "Nulei " + nul );
+							}
+}
+——————————————
+Task 2 p 6
+
+—————————————
+Task 2 p 7
+
+// ne rabotait progeria na dvuznachnost!!!!
+Scanner input = new Scanner(System.in);
+		
+		System.out.println("Zadanie: vivesti na ekran summu vseh 4isel kotorie yavlyayutsya ");
+		System.out.println("dvuzna4nimi i natselo delyatsya na 11 v diapazone ot A do B(vvoditsya s ");
+		System.out.println("klaviatury)");
+		System.out.println("Vvedite 4islo A: ");
+		int a = input.nextInt();
+		System.out.println("Vvedite 4islo B: ");
+		int b = input.nextInt();
+		int sum = 0;
+		int n = a;
+	
+		//if (a >= 10 && 100 > a && b >= 10 && 100 > b && a > - 100 && b > - 100 && - 10 >= a && - 10 >= b) {
+		while ( n >= a && n <= b ) {
+					if ( n % 11 == 0 ) {
+						sum = sum + n;
+						n = n + 1;
+						} 
+					else {
+						n = n + 1;
+						}
+		}
+		System.out.println( "Summa 4isel = " + sum );
+		
+		//} else {
+	//		System.out.println( "4isla dolzhni bit dvuznachnimi!!!!" );
+	//}
+		
+						
+		
+		
+		
+							}
+}
+——————————————
+Task 2 p8
+Scanner input = new Scanner(System.in);
+		
+		System.out.println("Zadanie: vivesti na ekran vse 4isla ot 0 do n, ne prevoshodiaschih n ");
+		System.out.println("i ne delyaschihsya ni na odno iz 4isel 2, 3, 5. Znachenie n vvoditsya s ");
+		System.out.println("klaviatury)");
+		System.out.println("Vvedite 4islo N: ");
+		int ncount = input.nextInt();
+		int sum = 0;
+		int n = 0;
+	
+		
+		while ( n < ncount ) {
+					if ((n % 2 != 0) && (n % 3 != 0) && (n % 5 != 0)) {
+						System.out.println ( n );
+						n = n + 1;
+						} 
+					else {
+						n = n + 1;
+						}
+							}
+}
+}
+
+——————————
+Task 2 p9
+Scanner input = new Scanner(System.in);
+		
+		System.out.println("Zadanie: vivesti na ekran vse summu kvadratov vseh ne4etnih 4isel iz");
+		System.out.println("posledovatelnosti ot A do B. Programma dolzhna proveryat 4to user ");
+		System.out.println("vvel A<B");
+		
+		System.out.println("Uslovie: A<B ");
+		System.out.println("Vvedite 4islo A: ");
+		int a = input.nextInt();
+		System.out.println("Vvedite 4islo B: ");
+		int b = input.nextInt();
+		int sum = 0;
+		int n = a;
+	
+		if (a > b) {
+				System.out.println("Vi vveli nevernie chisla. Po usloviu A dolzno bit menche B");
+					} else {
+							while ( b >= n ) {
+											if (n % 2 != 0) {
+															sum = sum + n * n;
+															n = n + 1;
+															} else {
+																	n = n + 1;
+																	}
+											  }
+										System.out.println ( sum );			
+							}
+	}
+}
+			
+
+——————————————
+Task 2 p10
+public static void main(String[] args) {
+Scanner input = new Scanner(System.in);
+		
+		System.out.println("Zadanie: npisat programmu kot-ya budet s4itivat N slov i simvolnih virazhenii");
+		System.out.println("vvodimih polzovatelem i skleivat ih v odin obschii tekst. Signalom zaversheniya vvoda ");
+		System.out.println("i vivoda vsego teksta polzovatelu, dolzhno sluzhit vvedennoe slovo END");
+		System.out.println("Zna4enie N vvoditya s klaviaturi. Dlya proverki ispolzovat .equals() iz tipa String");
+		
+		System.out.println("Vvedite slovo ili simvolnoe virazhenie: ");
+		String s1 = "";
+		String s2 = "END";
+		String sum = "";
+		
+
+		 while ( s1.equals(s2) == false ) {
+			  s1 = input.next();
+			 							if ( s1.equals(s2) == false ) {
+			 								sum = sum + s1;
+				
+			 								} else {
+			 									System.out.println( s2 );
+			 										}
+		 								} 
+		 					System.out.println( sum );
+	
+	}
+}
+———————————
+Task 3 p11
+Scanner input = new Scanner(System.in);
+		
+		System.out.println("Zadanie: napisat programmu reshauschuyu kvadratnoe urovnenie.");
+		System.out.println("Koeffitsienti vvodiatsya polzovatelem s klaviaturi");
+		 /*  a**/
+		
+		System.out.println("Vvedite koeffitsienti kvadratnogo urovneniya: A, B, C ");
+		System.out.println("Vvedite koeffitsient A: ");
+		double a = input.nextDouble();
+		System.out.println("Vvedite koeffitsient B: ");
+		double b = input.nextDouble();
+		System.out.println("Vvedite koeffitsient C: ");
+		double c = input.nextDouble();
+		double x1;
+		double x2;
+		double d;
+		String s2 = "END";
+		String sum = "";
+//---------------------
+		d = b * b - 4 * a * c;
+		if ( a == 0 ){
+			System.out.println( "Vi vveli A ravnoe 0. Raschet ne vozmozhen!!!!");
+					} else {
+						if( d < 0 ) {
+				System.out.println( "Kornei net!!!" );
+									} else {
+								 			if ( d == 0) {
+								 				x1 =  - b / (2 * a);
+								 				System.out.println( "U urovneniya 1 koren: " + x1 );
+								 						} else {
+								 								x1 =  (- b + Math.sqrt( d ))/ (2 * a);
+								 								x2 =  (- b - Math.sqrt( d ))/ (2 * a);
+								 								System.out.println( "U urovneniya 2 korenia: x1= " + x1 + " x2= " + x2 );
+								 								}
+								 
+											}
+							}
+						}
+
+
+//---------------------
+	
+	}
+
+				
+————————————
+Task3 p12
+
+———————————————
+Task3 p13
+public static void main(String[] args) {
+Scanner input = new Scanner(System.in);
+		
+		System.out.println("Zadanie: napisat programmu dlya atelie.");
+		
+		 /*  a**/
+		
+		System.out.println("Vvedite dlinnu imeuscheisya tkani, m.: ");
+		double dlinna = input.nextDouble();
+		double x1;
+		double x2;
+		double d;
+		String s2 = "END";
+		String sum = "";
+//---------------------
+		while ( dlinna > 0){
+			System.out.println("Vvedite dlinnu otrezka tkani: ");
+			double otrezok = input.nextDouble();
+				if( 1 > dlinna ) {
+					System.out.print( "Ostatok tkani: " + dlinna + " Otrezat bolshe nelzia" );
+				} else {
+					if( otrezok < 1) {
+					System.out.println( "Tak malo otrezat nelza!!! Minimalnaya dlinna otrezka 1 metr");
+				} else {
+					if ( dlinna == 0 || otrezok > dlinna) {
+						System.out.println( "Tkan zakonchilas!!!" );
+				} else {
+					dlinna = dlinna - otrezok;
+					
+				}
+			}
+		  }
+		}
+		System.out.println( "Tkan zakoncholas!!!! Ostatok: " + dlinna );
+
+
+//---------------------
+	
+	}
+}
+————————————
+Task4 p14
+Scanner input = new Scanner(System.in);
+		
+		System.out.println("Zadanie: polzovatel vvodin n 4isel. Vivesti posledovatelnost n v obratnom poriadke.");
+		
+		 /*  a**/
+		
+		
+		System.out.println( "Vvedite kolichestvo 4isel v massive, N: " ); 
+		int n = input.nextInt();
+		int index = 0; 
+		double massiv [] = new double[n]; 
+		
+		while ( index < n ) { 
+			System.out.println( "Vvedite chislo: " ); 
+			massiv [ index ] = input.nextDouble(); 
+			index = index + 1; 
+						}
+						index = massiv.length - 1; 
+							while( index >= 0 ) { 
+									System.out.println( massiv [ index ] + " " ); 
+									index = index - 1; 
+											}
+
+//---------------------
+	
+	}
+}
+—————————————
+Task 4 p15
+Scanner input = new Scanner(System.in);
+		
+System.out.println("Vvedite kolichestvo elementov massiva, N: ");
+int n = input.nextInt(); 
+double array [] = new double[n];
+int index = 0; 
+
+while ( index < n ) { 
+			System.out.println("Vvedite chislo: "); 
+			array[index] = input.nextDouble(); 
+			index = index + 1; 
+	  				}
+					index = array.length - 1; 
+					double max = array[0]; 
+					double min = array[0];
+					while( index >= 0) {
+										if(array[index] > max) { 
+												max = array[index]; 
+												}
+										if(array[index] < min) { 
+												 min = array[index]; 
+												}
+										index = index - 1; 
+										}
+System.out.println("Minimalnoe 4islo iz posledovalelnosti: " + min); 
+System.out.println("Maximalnoe 4islo iz posledovalelnosti: " + max);
+//---------------------
+	
+	}
+}
+———————————
+Task 4 p16
+Scanner input = new Scanner(System.in);
+		
+double array [] = new double[100];
+int maxArray = 100;
+int index = 0; 
+int n = 0;
+int maxN = 7;
+
+while ( index < maxArray ) { 
+					if (n < maxN ) {
+						n = n + 1;
+						array[index] = n; 
+						index = index + 1; 
+								} else {
+									n =0;
+								}
+								}
+								
+	  				
+					index = 0; 
+					while( index < array.length ) {
+										System.out.println(array[index]);
+										index = index + 1;
+										}
+
+//---------------------
+	
+	}
+}
+—————————
+Task 4 p17
+Scanner input = new Scanner(System.in);
+		
+System.out.println("Vvvedite razmer posledovatelnosti: ");
+int n = input.nextInt();
+
+
+int  l = 0;
+int m = 0;
+int [] chetArray = new int [n];			// massiv chetnih chisel
+int [] nechetArray = new int[n]; 	// massiv nechetnih chisel
+int index = 0;
+
+
+while ( index < n ) { 
+	System.out.println("Vvedite chislo: ");
+	int x = input.nextInt();
+	if (x % 2 == 0) {
+		chetArray[l] = x;
+		l ++;
+		} else {
+			nechetArray [m] = x;
+			m ++;
+		}
+	index ++;
+}
+ index = 0;
+ System.out.println("Massiv chetnih chesil");
+while (index < n) {
+	System.out.println(chetArray[index]);
+	index ++;
+}
+index = 0;
+System.out.println("Massiv nechetnih chesil:"); 
+while (index < n) {
+	System.out.println(nechetArray[index]);
+	index ++;
+}
+					
+//---------------------
+	
+	}
+}
+
+
+———————
+Task4 p18
+Scanner input = new Scanner(System.in);
+		
+System.out.println("Vvvedite razmer posledovatelnosti massiva, N: ");
+int n = input.nextInt();
+
+int [] array = new int [n];			// massiv chisel
+int index = 0;
+
+
+while ( index < n ) { // zapolnim massiv
+	System.out.println("Vvedite chislo: ");
+	int x = input.nextInt();
+	array [index] = x;
+	index ++;
+		}
+	System.out.println("1. Vtoroi element massiva: " + array[1]);
+		index = 0;			
+	int a = 0;
+	while ( index < array.length) {
+		a = a + array[index];
+	index ++;
+	
+	}
+	int b = a%n;
+	System.out.println("2. Element kotori nahoditsya v pozitsii, ravnoi ostatku: " );
+	System.out.println("   ot deleniya  summi znachenii vseh elementov posledovatelnosti na N: " + array[b]);
+	
+	int c = 0;
+	index = 0;
+	
+	while(index < array.length) {
+		if (array[index]  >= c) {
+			c = array[index];
+		} 
+		index ++;
+		
+	}
+	
+	System.out.println("3. Samii bolshoi element posledovatelnosti: " + c );
+	
+	
+	int g = c;
+	index = 0;
+	
+	while(index < array.length) {
+		if (array[index]  <= g && array[index] % 6 == 0 ) {
+			g = array[index];
+		} 
+		index ++;
+		
+	}
+	
+	System.out.println("3. Samii malenkii element posledovatelnosti kratnii 6: " + g );
+	
+	
+	
+	
+	
+	
+//---------------------
+	
+	
+	}
+}
+
+
+
+———————————
+Task 5 p19
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
