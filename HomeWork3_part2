@@ -1,0 +1,431 @@
+Task2 p1
+import java.util.*;
+public class Task1 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Vvedite pervoe slovo:");
+		String wordone = input.next();
+		
+		System.out.println("Vvedite vtoroe slovo:");
+		String wordtwo = input.next();
+		
+		System.out.println("Vvedite tretie slovo:");
+		String wordthree = input.next();
+		
+		System.out.println("Vvedite 4etrvertoe slovo:");
+		String wordfore = input.next();
+		
+		System.out.println("Vvedite piatoe slovo:");
+		String wordfive = input.next();
+		
+		
+		
+		System.out.println( "Itogovaia fraza: " + wordone + " " + wordtwo + " " + wordthree + " " + wordfore + " " + wordfive );
+		
+	}
+}
+————————
+Task2 p2
+import java.util.*;
+public class Task1 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Vvedite peremennuyu a:");
+		double a = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu b:");
+		double b = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu c:");
+		double c = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu d:");
+		double d = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu e:");
+		double e = input.nextDouble();
+		
+		double summ = a + b + c + d + e;
+		System.out.println("Summa 4isel a, b, c, d, e ravna: " + summ);
+		
+		boolean x = summ % a > 0 || summ % a < a / 2;
+		
+		
+		
+		System.out.println( "Rezultat sravneniya: " + x );
+		
+	}
+}
+
+———————————
+Task2 p3
+import java.util.*;
+public class Task1 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Vvedite peremennuyu a: ");
+		double first = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu b: ");
+		double second = input.nextDouble();
+		
+		System.out.println("Vvedite edinitsu izmereniya: ");
+		String word = input.next();
+		
+		double summ = first + second;
+
+		System.out.println( first + " " + word + " + " + second + " " + word +  " = " + summ + " " + word );
+		
+	}
+}
+
+————————
+Task2 p4
+mport java.util.*;
+public class Task1 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Vvedite peremennuyu a: ");
+		double  a = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu b: ");
+		double b = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu c: ");
+		double c = input.nextDouble();
+		
+		boolean x = a > b + c || c * c > a + b;
+		
+
+		System.out.println( "Rezultat  " + x );
+		
+	}
+}
+
+———————————
+Task2 p5
+import java.util.*;
+public class Task1 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Vvedite peremennuyu q: ");
+		double  q = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu w: ");
+		double w = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu e: ");
+		double e = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu r: ");
+		double  r = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu t: ");
+		double  t = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu y: ");
+		double  y = input.nextDouble();
+		
+		boolean x = ( r + t + y) % w > (q - t) || w * w + r * r > (q + y) * (q + y) || e == 10;
+		
+
+		System.out.println( "Rezultat  " + x );
+		
+	}
+}
+
+————————
+Task2 p6
+import java.util.*;
+public class Task1 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Vvedite peremennuyu q: ");
+		double  q = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu w: ");
+		double w = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu e: ");
+		double e = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu r: ");
+		double  r = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu t: ");
+		double  t = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu y: ");
+		double  y = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu u: ");
+		double  u = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu i: ");
+		double  i = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu o: ");
+		double  o = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu p: ");
+		double  p = input.nextDouble();
+		
+		boolean ans = ( q + w + e + r + t ) <= Math.pow(p, 2) - Math.pow(o, 2) || q + w + e + r + t + y + u + i + o <= 100;
+		
+
+		System.out.println( "Rezultat  " + ans );
+		
+	}
+}
+
+———————————
+Task2 p7
+import java.util.*;
+public class Task1 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Vvedite peremennuyu q: ");
+		double  q = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu w: ");
+		double w = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu e: ");
+		double e = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu r: ");
+		double  r = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu t: ");
+		double  t = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu y: ");
+		double  y = input.nextDouble();
+		
+		
+		
+		boolean ans = q < w && w < e && e < r && r < t && t < y && q == 3;
+		
+
+		System.out.println( "Rezultat  " + ans );
+		
+	}
+}
+
+————————
+Task2 p8
+import java.util.*;
+public class Task1 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Vvedite peremennuyu q: ");
+		double  q = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu w: ");
+		double w = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu e: ");
+		double e = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu r: ");
+		double  r = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu t: ");
+		double  t = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu y: ");
+		double  y = input.nextDouble();
+		
+		
+		
+		boolean ans = (q + q / 2) < w && (w + w / 2) < e && (e + e / 2) < r && (r + r / 2) < t && (t + t / 2) < y && q < (y /2);
+		
+
+		System.out.println( "Rezultat  " + ans );
+		
+	}
+}
+———————————
+Task2 p9
+import java.util.*;
+public class Task1 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Vvedite peremennuyu a: ");
+		double  a = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu b: ");
+		double b = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu c: ");
+		double c = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu d: ");
+		double  d = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu e: ");
+		double  e = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu f: ");
+		double  f = input.nextDouble();
+		
+		double x = a;
+		a = f;
+		System.out.println( a );
+		
+		double y = b;
+		b = e;
+		System.out.println( b );
+		
+		double z = c;
+		c = d;
+		System.out.println( c );
+		System.out.println( z );
+		System.out.println( y );
+		System.out.println( x );
+	}
+}
+
+————————
+Task2 p9.1
+import java.util.*;
+public class Task1 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Vvedite peremennuyu a: ");
+		double  a = input.nextDouble();
+		
+		System.out.println("Vvedite peremennuyu b: ");
+		double b = input.nextDouble();
+		a = a + b;
+		b = a - b;
+		a = a - b;
+		
+		
+		
+		System.out.println( a );
+		System.out.println( b );
+
+	}
+}
+
+—————————
+Task3 p10
+import java.util.*;
+public class Task1 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Vvedite  rasstoyanie v metrah: ");
+		double  a = input.nextDouble();
+
+		System.out.println( "Rasstoyanie v kilometrah: " + a / 1000 );
+		
+
+	}
+}
+
+———————————
+Task3 p11
+package letion3day1;
+import java.util.*;
+public class Task1 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Vvedite  tri storing treugolnika ");
+		double  a = input.nextDouble();
+		double far = a * 9 / 5 + 32;
+		double kel =a + 273.15;
+
+		System.out.println( "Temperatura v Faringeitah: " + far );
+		System.out.println( "Temperatura v Kelvinah: " + kel );
+
+	}
+}
+
+————————
+Task3 p12
+public class Task1 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Vvedite  tri storing treugolnika: ");
+		System.out.println("Vvedite  storonu a: ");
+		double  a = input.nextDouble();
+		System.out.println("Vvedite  storonu b: ");
+		double  b = input.nextDouble();
+		System.out.println("Vvedite  storonu c: ");
+		double  c = input.nextDouble();
+		
+		if (a > 0 && b > 0 && c >0) {
+			System.out.println( "Treugolnik suschestvuet" );
+		} else {
+			System.out.println( "Treugolnik  ne suschestvuet" );
+		}
+	}
+}
+
+———————————
+Task3  p13
+import java.util.*;
+public class Task1 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Vvedite  ugli treugolnika: ");
+		System.out.println("Vvedite  ugol a: ");
+		double  a = input.nextDouble();
+		System.out.println("Vvedite  ugol b: ");
+		double  b = input.nextDouble();
+		System.out.println("Vvedite  ugol c: ");
+		double  c = input.nextDouble();
+		
+		if ( a + b + c == 180 ) {
+			System.out.println( "Treugolnik suschestvuet" );
+		} else {
+			System.out.println( "Treugolnik  ne suschestvuet" );
+		}
+	}
+}
+
+————————
+Task3 p14
+import java.util.*;
+public class Task1 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Vvedite  dva znacheniya dlya sravneniya. ");
+		System.out.println("Vvedite  znachenie A v duimah: ");
+		double  a = input.nextDouble();
+		System.out.println("Vvedite  znachenie B v kilometrah: ");
+		double  b = input.nextDouble();
+		
+		boolean r = a * 2.54 >= b * 100000;
+			System.out.println( r );
+		
+	}
+}
+
+———————————
+Task3 p15
+public class Task1 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Vvedite koeffitsienti urovneniya: ");
+		System.out.print("Vvedite koeffitsient a:");
+		double a = input.nextDouble(); 
+		System.out.print("Vvedite koeffitsient b:");
+		double b = input.nextDouble(); 
+		System.out.print("Vvedite koeffitsient c:");
+		double c = input.nextDouble(); 
+
+		double discrim = b * b - 4 * a * c;
+				
+		boolean koef = a != 0;
+		boolean korni = koef && discrim < 0;
+
+		System.out.println("Vvedennie koeffitsienti podhodyat? - " + koef); 
+		System.out.println("U urovneniya est korni? - " + korni);
+		
+	}
+}
+
+
