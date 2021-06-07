@@ -1,0 +1,177 @@
+Them 3, home task 1
+———————————
+Task2 p1-5
+package letion3day1;
+import java.util.*;
+public class Task1 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		double one = input.nextDouble();
+		double two = one * 5;
+		double three = one + two;
+		one = one + three;
+		System.out.println( one );
+		
+	}
+}
+———
+Task 3 p6
+package letion3day1;
+import java.util.*;
+public class Task1 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		double delimoe = input.nextDouble();
+		double delitel = input.nextDouble();
+		double ostatok = delimoe%delitel;
+		System.out.println( ostatok );
+		
+	}
+}
+—————
+Task 3 p7
+import java.util.*;
+public class Task1 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		double number = input.nextDouble();
+		boolean sravn = 20<number && number<100;
+		
+		System.out.println( sravn );
+		
+	}
+}
+—————
+Task 3 p8
+import java.util.*;
+public class Task1 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		double one = input.nextDouble();
+		double two = input.nextDouble();
+		double summsqrt = (one * one) + (two * two);
+		
+		System.out.println( summsqrt );
+		
+	}
+}
+———————
+Task3 p9
+import java.util.*;
+public class Task6 {
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+		String stroka = input.next();
+		String question = "Yuo just entered ";
+		
+		
+		System.out.println( question + stroka );
+
+	}
+}
+———————
+Task3 p10
+import java.util.*;
+public class Task1 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		double one = input.nextDouble();
+		double two = input.nextDouble();
+		double three = input.nextDouble();
+		double fore = input.nextDouble();
+		double five = input.nextDouble();
+		double sum = one + two + three + fore + five;
+		
+		String answer = "Your summ ";
+		System.out.println( answer + sum );
+		
+	}
+}]
+————————
+Task3 p11
+import java.util.*;
+public class Task1 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		double one = input.nextDouble();
+		double two = input.nextDouble();
+		double three = input.nextDouble();
+		double fore = input.nextDouble();
+		double five = input.nextDouble();
+		double sum = one + two + three + fore + five;
+		double mult = one * two * three * fore * five;
+		boolean sravnim = mult >= sum;
+		
+		System.out.println( sravnim );
+		
+	}
+}
+
+——————
+Task3 p12
+mport java.util.*;
+public class Task1 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		double x = input.nextDouble();
+		double y = -4 % 3 * (x + (2 + (8 / -2 + 15) + (-x + 4 % 3) * 2) -12 / 4);
+		double z = y % 3 + -x * 2;
+		
+		
+		System.out.println( z );
+		
+	}
+}
+———————
+Task3 p13
+import java.util.*;
+public class Task1 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		double x = input.nextDouble();
+		double y = (x + (2 +(8 / -2 + 15) +(-x + 4 % 3) * 2) -12 / 4);
+		double z = y % 3 + -x * 2;
+		
+		
+		System.out.println( z );
+		
+	}
+}
+
+_____________
+Task3 p14
+
+import java.util.*;
+public class Task1 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		double x = input.nextDouble();
+		double y =  -x + 4 % 3 * 2 - 12 / 4 + (x + (2 + (8 / -2 + 15)));
+		boolean z = ! ( y > 100 ) || x > 100 && y > 100;
+		
+		
+		System.out.println( z );
+		
+	}
+}
+—————————————
+Task3 p15
+import java.util.*;
+public class Task1 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		double x = input.nextDouble();
+		boolean y =  x + 4 % 3 - x + (11 -2 / 2 * 0 - (x * -1)) >= x;
+		boolean z = ! ( x <= 3 && y == false ) || x >= 3;
+		
+		
+		System.out.println( z );
+		
+	}
+}
+
+
+
+
+
